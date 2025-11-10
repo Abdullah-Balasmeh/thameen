@@ -15,9 +15,9 @@ class SplashViewBody extends StatelessWidget {
         height: 250,
         decoration: const ShapeDecoration(
           shape: CircleBorder(),
-          color: Colors.white,
+          color: Color(0xffF5EBE0),
         ),
-        child: SvgPicture.asset(Assets.imagesLogoSvg),
+        child: SvgPicture.asset(Assets.imagesLogoTest),
       ),
     );
   }

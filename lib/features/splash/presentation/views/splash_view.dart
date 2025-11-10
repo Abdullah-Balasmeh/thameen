@@ -32,7 +32,7 @@ class _SplashViewState extends State<SplashView> {
       kisRememberMe,
     );
 
-    Future.delayed(const Duration(seconds: 3), () {
+    Future.delayed(const Duration(minutes: 3), () {
       if (!mounted) return;
 
       if (!isSeen) {

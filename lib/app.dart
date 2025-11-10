@@ -11,6 +11,7 @@ class Thameen extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: const Color(0xff0D61AD),
+        fontFamily: 'Cairo',
       ),
       onGenerateRoute: onGenerateRoute,
       initialRoute: SplashView.routeName,
