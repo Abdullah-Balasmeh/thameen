@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thameen/core/constants/constant.dart';
+import 'package:thameen/features/auth/presentation/views/signin_view.dart';
 import 'package:thameen/features/onBoarding/presentation/views/on_boarding_view.dart';
 import 'package:thameen/features/splash/presentation/widgets/splash_view_body.dart';
 import 'package:thameen/shared/services/shared_preferences_singleton.dart';
@@ -39,12 +40,11 @@ class _SplashViewState extends State<SplashView> {
       if (!isSeen) {
         // لم يرَ المستخدم شاشة المقدمة
         Navigator.pushReplacementNamed(context, OnBoardingView.routeName);
-      } else if (isSeen && isRememberMe) {
+      } else if (isSeen) {
         // رأى المقدمة وفعّل "تذكرني"
-        // Navigator.pushReplacementNamed(context, HomeView.routeName);
+        Navigator.pushReplacementNamed(context, SigninView.routeName);
       } else {
         // رأى المقدمة لكن لم يفعّل "تذكرني"
-        // Navigator.pushReplacementNamed(context, SigninView.routeName);
       }
     });
   }

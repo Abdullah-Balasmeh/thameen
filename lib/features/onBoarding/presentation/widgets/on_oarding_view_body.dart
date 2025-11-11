@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:thameen/core/constants/constant.dart';
 import 'package:thameen/features/auth/presentation/views/signin_view.dart';
 import 'package:thameen/features/onBoarding/presentation/widgets/on_oarding_page_view.dart';
+import 'package:thameen/shared/services/shared_preferences_singleton.dart';
 import 'package:thameen/shared/widgets/custom_button.dart';
 
 class OnBoardingViewBody extends StatefulWidget {
@@ -64,6 +65,10 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               ),
               child: CustomButton(
                 onPressed: () {
+                  SharedPreferencesSingleton.setBool(
+                    isOnboardingSeen,
+                    true,
+                  );
                   Navigator.pushReplacementNamed(context, SigninView.routeName);
                 },
                 text: 'Get Started',

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:thameen/core/constants/constant.dart';
 import 'package:thameen/core/theme/app_text_style.dart';
+import 'package:thameen/features/auth/presentation/views/signin_view.dart';
+import 'package:thameen/shared/services/shared_preferences_singleton.dart';
 
 class PageViewItem extends StatelessWidget {
   const PageViewItem({
@@ -30,7 +33,16 @@ class PageViewItem extends StatelessWidget {
                 maintainSize: true,
                 maintainState: true,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    SharedPreferencesSingleton.setBool(
+                      isOnboardingSeen,
+                      true,
+                    );
+                    Navigator.pushReplacementNamed(
+                      context,
+                      SigninView.routeName,
+                    );
+                  },
                   child: Text(
                     'Skip',
                     style: AppTextStyle.medium18.copyWith(
