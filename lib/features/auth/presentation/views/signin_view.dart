@@ -9,7 +9,7 @@ class SigninView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context, title: 'Sign In'),
+      appBar: buildAppBar(context, false, title: 'Sign In'),
       body: const SafeArea(
         child: SigninViewBodyBlocConsumer(),
       ),

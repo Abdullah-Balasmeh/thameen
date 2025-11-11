@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thameen/features/auth/presentation/views/otp_verification_view.dart';
 import 'package:thameen/features/auth/presentation/views/signin_view.dart';
 import 'package:thameen/features/auth/presentation/views/signup_view.dart';
 import 'package:thameen/features/onBoarding/presentation/views/on_boarding_view.dart';
@@ -14,6 +15,10 @@ Route<dynamic> onGenerateRoute(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const SigninView());
     case SignupView.routeName:
       return MaterialPageRoute(builder: (context) => const SignupView());
+    case OtpVerificationView.routeName:
+      return MaterialPageRoute(
+        builder: (context) => const OtpVerificationView(),
+      );
 
     default:
       return MaterialPageRoute(builder: (context) => const SplashView());

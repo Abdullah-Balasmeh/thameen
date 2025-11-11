@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:thameen/core/constants/constant.dart';
+import 'package:thameen/features/auth/presentation/views/otp_verification_view.dart';
 import 'package:thameen/features/auth/presentation/widgets/auth_phone_text_form_field.dart';
 import 'package:thameen/features/auth/presentation/widgets/auth_text_form_field.dart';
 import 'package:thameen/features/auth/presentation/widgets/have_an_account_widget.dart';
@@ -308,6 +309,11 @@ class _SignupViewBodyState extends State<SignupViewBody> {
                     _phoneController.text,
                   ); // 8 digits
                   final e164 = '+9627$local8'; // E.164 without spaces if needed
+
+                  Navigator.pushReplacementNamed(
+                    context,
+                    OtpVerificationView.routeName,
+                  );
                 },
               ),
               const SizedBox(height: 30),

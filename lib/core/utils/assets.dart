@@ -61,5 +61,9 @@ class Assets {
   /// Assets for imagesOnboring4
   /// assets/images/onboring4.svg
   static const String imagesOnboring4 = "assets/images/onboring4.svg";
+
+  /// Assets for imagesOtpVerification
+  /// assets/images/otp_verification.svg
+  static const String imagesOtpVerification = "assets/images/otp_verification.svg";
 }
 

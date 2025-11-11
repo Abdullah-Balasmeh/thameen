@@ -9,7 +9,14 @@ class SignupView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: buildAppBar(context, title: 'Create Account'),
+      appBar: buildAppBar(
+        context,
+        true,
+        title: 'Create Account',
+        onPressed: () {
+          Navigator.pop(context);
+        },
+      ),
       body: const SafeArea(
         child: SignupViewBodyBlocConsumer(),
       ),
