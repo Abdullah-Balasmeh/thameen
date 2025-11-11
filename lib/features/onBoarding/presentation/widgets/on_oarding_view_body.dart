@@ -1,6 +1,7 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:thameen/core/constants/constant.dart';
+import 'package:thameen/features/auth/presentation/views/signin_view.dart';
 import 'package:thameen/features/onBoarding/presentation/widgets/on_oarding_page_view.dart';
 import 'package:thameen/shared/widgets/custom_button.dart';
 
@@ -62,7 +63,9 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
                 horizontal: kHorizontalPadding,
               ),
               child: CustomButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, SigninView.routeName);
+                },
                 text: 'Get Started',
               ),
             ),

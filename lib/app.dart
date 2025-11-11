@@ -10,7 +10,7 @@ class Thameen extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xff0D61AD),
+        scaffoldBackgroundColor: const Color(0xffF5EBE0),
         fontFamily: 'Cairo',
       ),
       onGenerateRoute: onGenerateRoute,

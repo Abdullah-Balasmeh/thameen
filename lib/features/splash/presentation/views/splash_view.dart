@@ -22,6 +22,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Color(0xff0D61AD),
       body: SafeArea(child: SplashViewBody()),
     );
   }
@@ -32,7 +33,7 @@ class _SplashViewState extends State<SplashView> {
       kisRememberMe,
     );
 
-    Future.delayed(const Duration(minutes: 3), () {
+    Future.delayed(const Duration(seconds: 3), () {
       if (!mounted) return;
 
       if (!isSeen) {
