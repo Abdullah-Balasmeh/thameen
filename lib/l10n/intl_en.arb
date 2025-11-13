@@ -1,0 +1,73 @@
+{
+  "@@locale": "en",
+
+  // SPLASH
+  "splashLoading": "Loading...",
+
+  // ----------------------------------
+  // SIGN IN
+  // ----------------------------------
+  "signinTitle": "Sign In",
+  "signinEmailLabel": "Email Address",
+  "signinPasswordLabel": "Password",
+  "signinForgotPasswordLink": "Forgot Password?",
+  "signinRememberMeCheck": "Remember Me",
+  "signinButton": "Sign In",
+  "signinNoAccountText": "Don't have an account?",
+  "signinCreateAccountLink": "Create One",
+
+  "signinWithGoogleButton": "Sign In With Google",
+  "signinWithFacebookButton": "Sign In With Facebook",
+
+  "signinErrorInvalidEmail": "Enter a valid email",
+  "signinErrorRequiredField": "This field is required",
+
+  // ----------------------------------
+  // SIGN UP
+  // ----------------------------------
+  "signupTitle": "Create Account",
+  "signupFirstNameLabel": "First Name",
+  "signupLastNameLabel": "Last Name",
+  "signupPhoneLabel": "Phone Number",
+  "signupEmailLabel": "Email Address",
+  "signupPasswordLabel": "Password",
+  "signupConfirmPasswordLabel": "Confirm Password",
+
+  "signupTermsTextPrefix": "By creating an account you agree to our",
+  "signupTermsTextLink": "Terms & Conditions",
+
+  "signupButton": "Create Account",
+  "signupAlreadyHaveAccountText": "Already have an account?",
+  "signupSigninLink": "Sign In",
+
+  "signupErrorFirstNameShort": "First name must be at least 2 characters",
+  "signupErrorLastNameShort": "Last name must be at least 2 characters",
+  "signupErrorEmailInvalid": "Enter a valid email",
+  "signupErrorPasswordShort": "Password must be at least 6 characters",
+  "signupErrorPasswordMismatch": "Passwords do not match",
+
+  // ----------------------------------
+  // OTP VERIFICATION
+  // ----------------------------------
+  "otpTitle": "OTP Verification",
+  "otpVerifyPhoneTitle": "Verify Your Phone Number",
+  "otpInstructionText": "Enter the 6 digit code sent to your number",
+  "otpVerifyButton": "Verify",
+  "otpResendText": "Didn't receive the code?",
+  "otpResendLink": "Resend",
+
+  // ----------------------------------
+  // ONBOARDING
+  // ----------------------------------
+  "onboardingSkipButton": "Skip",
+  "onboardingGetStartedButton": "Get Started",
+
+  "onboarding1Title": "Find Thameen",
+  "onboarding1Subtitle": "Short description for page 1 goes here...",
+
+  "onboarding2Title": "Welcome to Thameen",
+  "onboarding2Subtitle": "Short description for page 2 goes here...",
+
+  "onboarding3Title": "AI to Thameen",
+  "onboarding3Subtitle": "Short description for page 3 goes here..."
+}
